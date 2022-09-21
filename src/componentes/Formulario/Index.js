@@ -1,3 +1,4 @@
+import Botao from '../Botao'
 import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
@@ -22,6 +23,9 @@ const Formulario = () => {
                 <CampoTexto label='posição' placeholder='Qual sua posição jogando de Jhin' />
                 <CampoTexto label='Elo' placeholder='Qual o seu elo maximo sendo mono Jhin' />
                 <ListaSuspensa label = 'Ligas' itens = {times}/>
+                <Botao>
+                    Criar card
+                </Botao>
             </form>
         </section>
     )
