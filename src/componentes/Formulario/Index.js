@@ -49,8 +49,8 @@ const Formulario = (props) => {
                     aoAlterado={valor => setCargo(valor)}
                 />
                 <CampoTexto
-                    label='Nome do seu duo'
-                    placeholder='Qual o Nome de invocador do seu duo'
+                    label='Icone de invocador'
+                    placeholder='Coloque o seu Icone de Invocador'
                     valor={imagem}
                     aoAlterado={valor => setImagem(valor)} />
                 <ListaSuspensa
