@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
@@ -24,7 +24,12 @@ const Formulario = () => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        console.log('form foi submetido', nome, cargo, imagem,time);
+        props.aoInvocadorCdastrado({
+            nome,
+            cargo,
+            imagem,
+            time
+        })
     }
 
     return (
