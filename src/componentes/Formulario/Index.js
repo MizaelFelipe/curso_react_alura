@@ -15,11 +15,7 @@ const Formulario = (props) => {
 
 
     const times = [
-        'Desafiante',
-        'Grao mestre',
-        'Mestre',
-        'Diamante',
-        'Platina'
+       
     ]
 
     const aoSalvar = (evento) => {
@@ -56,7 +52,7 @@ const Formulario = (props) => {
                 <ListaSuspensa
                     obrigatorio={true}
                     label='Ligas'
-                    itens={times}
+                    itens={props.times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)} />
 
