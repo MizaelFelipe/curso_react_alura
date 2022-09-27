@@ -44,7 +44,13 @@ function App() {
     <div className="App">
       <Banner />
       <Formulario times={times.map(time => time.nome)} aoInvocadorCdastrado = {invocador => aoNovoInvocadorAdicionado(invocador )}/>
-      {times.map (time => <Time key={time.nome} nome ={time.nome} corPrimaria={time.corPrimaria} corSecundaria= {time.corSecundaria} />)}
+      {times.map (time => <Time 
+      key={time.nome} 
+      nome ={time.nome}
+       corPrimaria={time.corPrimaria} 
+       corSecundaria= {time.corSecundaria} 
+       invocadores={invocadores.filter(invocadores => invocadores.time == time.nome)}
+       />)}
       
     </div>
 
