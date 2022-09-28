@@ -36,7 +36,7 @@ function App() {
 
   const [invocadores,setInvocadores] = useState ([])
   const aoNovoInvocadorAdicionado = (invocador) => {
-    console.log(invocador);
+    debugger
     setInvocadores([...invocadores , invocador])
 
   }

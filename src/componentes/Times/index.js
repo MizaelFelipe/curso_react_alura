@@ -10,7 +10,7 @@ const Time = (props) => {
             <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
 
             <div className='colaboradores'>
-                {props.invocadores.map(invocadores => <Colaborador nome={invocadores.nome} cargo={invocadores.cargo} imagem={invocadores.imagem} />)}
+                {props.invocadores.map(invocadores => <Colaborador corDefundo = {props.corPrimaria} key={invocadores.nome} nome={invocadores.nome} cargo={invocadores.cargo} imagem={invocadores.imagem} />)}
             </div>
         </section>
 
